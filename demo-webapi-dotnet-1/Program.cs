@@ -16,7 +16,7 @@ namespace demo_webapi_dotnet_1
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(option => option.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
             {
-                Title = "Food Truck API",
+                Title = "Food Delivery API",
                 Description = "Demo .NET WebAPI (For Learning Purpose)",
 
             })); ;
@@ -28,7 +28,7 @@ namespace demo_webapi_dotnet_1
                 app.UseSwagger();
                 app.UseSwaggerUI(options =>
                 {
-                    options.DocumentTitle = "Food Truck API";
+                    options.DocumentTitle = "Food Delivery API";
                 });
             }
 
